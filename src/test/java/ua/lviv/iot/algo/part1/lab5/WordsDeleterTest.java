@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class WordsDeleterTest {
     public static final int LENGHT=2;
     WordsDeleter deleter = new WordsDeleter();
-    private final String text = "IoT is not very hard";
+    private final String text = "IoT - Internet of things";
     @Test
     public void removeWords() {
-        assertEquals(" is not very hard", deleter.removeWords(text, 2));
+        assertEquals(" - Internet of things", deleter.removeWords(text, 2));
 
     }
     @Test
